@@ -1,0 +1,79 @@
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 86px);
+    // position: relative;
+    font-family: 'Merriweather', serif;
+    background: #240406;
+
+    .phrase-accroche {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 10px;
+        max-width: 600px;
+        margin-left: 100px;
+
+        h1 {
+            color: white;
+            z-index: 2;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .button {
+            z-index: 2;
+
+            button {
+                border: 0;
+                background: #ff000d;
+                color: white;
+                width: 150px;
+                height: 40px;
+                border-radius: 15px;
+            }
+        }
+
+        // .picture {
+            // img {
+                // float: right;
+                // margin-right: 130px;
+                // margin-top: -400px;
+                // display: block;
+            // }
+        // }
+    }
+}
+
+// .container-header::after {
+//     position: absolute;
+//     content: '';
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     background-color: #353333b7;
+//     background-position: center;
+//     z-index: 1;
+// }
+
+// .container-header::before {
+//     position: absolute;
+//     content: '';
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     background-image: url('/assets/images/bg-fond-ecran.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     z-index: 1;
+// }

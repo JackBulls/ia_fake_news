@@ -1,0 +1,57 @@
+// .container-header {
+//     width: 100%; /* Assure que le header occupe toute la largeur de la page */
+//     position: fixed; /* Fixe le header en haut de la fenêtre du navigateur */
+//     top: 0; /* Le positionne au sommet de la fenêtre */
+//     left: 0; /* Le positionne tout à gauche */
+//     z-index: 1000; /* Un z-index élevé pour être sûr qu'il soit au-dessus du contenu */
+//     background-color: #fff; /* Fond du header */
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+//     overflow: hidden; /* Empêche le contenu du header de déborder */
+// }
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    // padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #240406;
+
+    .logo {
+        height: 70px;
+        width: 70px;
+        margin-left: 50px;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+
+            &::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #ff000d;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                transition: 0.5s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+}
